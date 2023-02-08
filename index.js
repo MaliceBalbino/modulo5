@@ -1,10 +1,10 @@
-readlineSync= require ('readline-sync');
+const readlineSync= require ('readline-sync');
 const palavra = []
-const input = ""
+let input = ""
 
 while (input != "sair") {
    palavra.push(input)
-    
-input= readlineSync.question('digite uma propriedade css');
-
+   input= readlineSync.question('digite uma propriedade css: ');
 };
+
+console.log( palavra.sort().join("\n"));
